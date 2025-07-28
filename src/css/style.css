@@ -1,0 +1,130 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CORPO E FUNDO ESCURO */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #121212;
+  color: #f0f0f0;
+  line-height: 1.6;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1c1c1c;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo img {
+  height: 90px;
+  width: auto;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  background-color: transparent;
+  color: #f0f0f0;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+.nav-links a:hover {
+  background-color: #FFD700;
+  color: #121212;
+  transform: scale(1.05);
+}
+
+
+/* SEÇÕES */
+section {
+  padding: 3rem 2rem;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #FFD700;
+}
+
+/* ENCONTROS */
+.encontros-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  justify-items: center;
+}
+
+.encontro {
+  background-color: #1f1f1f;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 400px;
+  width: 100%;
+}
+
+.encontro:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+}
+
+.encontro img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.encontro h3 {
+  color: #fff;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.encontro p {
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+/* RODAPÉ */
+footer {
+  background-color: #111;
+  color: #ccc;
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #FFD700;
+  text-decoration: none;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 600px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
